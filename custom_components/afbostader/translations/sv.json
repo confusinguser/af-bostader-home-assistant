@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "AF Bostäder",
+        "description": "Logga in med samma e-postadress och lösenord som på afbostader.se.",
+        "data": {
+          "username": "E-postadress",
+          "password": "Lösenord"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Logga in igen",
+        "description": "Ange lösenordet för {username}.",
+        "data": {
+          "password": "Lösenord"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Fel e-postadress eller lösenord.",
+      "cannot_connect": "Kunde inte ansluta till AF Bostäder eller hitta sidan för tvättbokning."
+    },
+    "abort": {
+      "already_configured": "Kontot är redan konfigurerat.",
+      "reauth_successful": "Inloggningen lyckades."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_booking": {
+        "name": "Nästa tvättid"
+      },
+      "next_available": {
+        "name": "Nästa lediga tvättid"
+      }
+    }
+  }
+}

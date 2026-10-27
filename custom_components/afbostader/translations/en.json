@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "AF Bostäder",
+        "description": "Log in with the same email and password you use on afbostader.se.",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate AF Bostäder",
+        "description": "Enter the password for {username}.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password.",
+      "cannot_connect": "Could not connect to AF Bostäder or find the laundry booking page."
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "reauth_successful": "Re-authentication was successful."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_booking": {
+        "name": "Next laundry booking"
+      },
+      "next_available": {
+        "name": "Next available laundry time"
+      }
+    }
+  }
+}
